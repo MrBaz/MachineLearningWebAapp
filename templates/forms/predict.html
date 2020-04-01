@@ -1,0 +1,14 @@
+{% extends 'layouts/main.html' %}
+{% block title %}Reset Password{% endblock %}
+{% block content %}
+  <form   class="form form-reset" method="POST" enctype="multipart/form-data">
+    <h3 class="form-heading">Predict Images <a href="{{ url_for('home') }}" title="Back to homepage"><i class="fa fa-home pull-right"></i></a></h3>
+    {{ form.imageSize(class_ = 'form-control first-input', placeholder = form.imageSize.label.text, autofocus = true) }}
+    {{ form.photo(class_ = 'form-control first-input last-input', placeholder = form.photo.label.text) }}
+
+    <input type="submit" value="Submit" class="btn btn-lg btn-primary btn-block" >
+   
+  </form>
+  <!-- <div>Uploaded Image: <img src="{{ img }}" /></div> -->
+  <div>Prediction Results: {{results}}</div>
+{% endblock %}

@@ -1,0 +1,7 @@
+*.pyc
+.DS_Store
+env
+venv
+*.h5
+__pycache__
+*.mp4
